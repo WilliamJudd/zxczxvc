@@ -1,5 +1,5 @@
 //
-//  Cell Class.h
+//  MyCollectionViewCell.h
 //  zxczxvc
 //
 //  Created by William Judd on 3/16/16.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Cell_Class : UICollectionViewCell
+@interface MyCollectionViewCell : UICollectionViewCell
+
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end

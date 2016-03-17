@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--MainVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -27,6 +27,7 @@
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="yu0-AE-Cm9">
                                 <rect key="frame" x="0.0" y="90" width="375" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CKm-du-otK">
                                     <size key="itemSize" width="86" height="80"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -34,40 +35,43 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="1Ni-zH-9bQ">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="circleCell" id="1Ni-zH-9bQ" customClass="MyCollectionViewCell">
                                         <rect key="frame" x="0.0" y="24" width="86" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="86" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6wB-rD-6Zr">
-                                                    <rect key="frame" x="0.0" y="0.0" width="86" height="80"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6wB-rD-6Zr">
+                                                    <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="6wB-rD-6Zr" secondAttribute="trailing" constant="6" id="4oo-8U-GpJ"/>
+                                            <constraint firstItem="6wB-rD-6Zr" firstAttribute="leading" secondItem="1Ni-zH-9bQ" secondAttribute="leading" id="M3Q-5c-HPP"/>
+                                            <constraint firstAttribute="bottom" secondItem="6wB-rD-6Zr" secondAttribute="bottom" id="ZZp-2l-5QL"/>
+                                            <constraint firstItem="6wB-rD-6Zr" firstAttribute="top" secondItem="1Ni-zH-9bQ" secondAttribute="top" id="imH-10-1vN"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="6wB-rD-6Zr" id="8g4-Zu-rYB"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="sZp-6r-MOB"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Mam-Lf-Npm"/>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="mMh-CB-DH7"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="NzZ-Ch-mkq"/>
                                 </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="CellClass" destination="1Ni-zH-9bQ" id="hyS-Zo-uZL"/>
-                        <outlet property="_logoCollectionView" destination="yu0-AE-Cm9" id="kea-Mf-DBB"/>
-                        <outlet property="cellImage" destination="6wB-rD-6Zr" id="Ips-cG-dgO"/>
-                        <outlet property="flowLayout" destination="CKm-du-otK" id="s35-Sj-H2b"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="324.5" y="362.5"/>
+            <point key="canvasLocation" x="8.5" y="318.5"/>
         </scene>
     </scenes>
 </document>
