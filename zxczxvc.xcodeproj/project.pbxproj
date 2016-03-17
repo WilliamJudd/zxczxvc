@@ -16,6 +16,7 @@
 		0D48A1471C987CDA008213AC /* zxczxvcUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D48A1461C987CDA008213AC /* zxczxvcUITests.m */; };
 		0D4C1F561C99EA7900B77ADA /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4C1F551C99EA7900B77ADA /* MainVC.m */; };
 		0D4C1F981C99FC9100B77ADA /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4C1F971C99FC9100B77ADA /* MyCollectionViewCell.m */; };
+		0DC3DF211C9B09EE00733940 /* PostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3DF201C9B09EE00733940 /* PostCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		0D4C1F551C99EA7900B77ADA /* MainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainVC.m; sourceTree = "<group>"; };
 		0D4C1F961C99FC9100B77ADA /* MyCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewCell.h; sourceTree = "<group>"; };
 		0D4C1F971C99FC9100B77ADA /* MyCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewCell.m; sourceTree = "<group>"; };
+		0DC3DF1F1C9B09EE00733940 /* PostCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostCell.h; sourceTree = "<group>"; };
+		0DC3DF201C9B09EE00733940 /* PostCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				0D4C1F551C99EA7900B77ADA /* MainVC.m */,
 				0D4C1F961C99FC9100B77ADA /* MyCollectionViewCell.h */,
 				0D4C1F971C99FC9100B77ADA /* MyCollectionViewCell.m */,
+				0DC3DF1F1C9B09EE00733940 /* PostCell.h */,
+				0DC3DF201C9B09EE00733940 /* PostCell.m */,
 				0D48A12A1C987CDA008213AC /* Main.storyboard */,
 				0D48A12D1C987CDA008213AC /* Assets.xcassets */,
 				0D48A12F1C987CDA008213AC /* LaunchScreen.storyboard */,
@@ -279,6 +284,7 @@
 				0D48A1261C987CDA008213AC /* AppDelegate.m in Sources */,
 				0D4C1F981C99FC9100B77ADA /* MyCollectionViewCell.m in Sources */,
 				0D48A1231C987CDA008213AC /* main.m in Sources */,
+				0DC3DF211C9B09EE00733940 /* PostCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
